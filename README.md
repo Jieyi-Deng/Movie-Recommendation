@@ -7,7 +7,7 @@
 *The original code was finished on Databricks with cloud-based big data processing using Spark*
 
  
-### Part2: Spark ALS based approach for training model
+### Spark ALS based approach for training model
 #### ALS: Alternative Least Squares:
-- Recommender systems, aka information recommender system, is a family of methods that enable filtering through large observation and information space in order to provide recommendations in the information space that user does not have any observation, where the information space is all of the available items that user could choose or select and observation space is what user experienced or observed so far. [Recommender systems](https://en.wikipedia.org/wiki/Recommender_system) typically produce a list of recommendations in one of two ways – through collaborative filtering or through content-based filtering (also known as the personality-based approach).
-- 
+- [Recommender systems](https://en.wikipedia.org/wiki/Recommender_system) typically produce a list of recommendations in one of two ways: [collaborative filtering](https://en.wikipedia.org/wiki/Collaborative_filtering) or through [content-based filtering](https://en.wikipedia.org/wiki/Recommender_system#Content-based_filtering) (also known as the personality-based approach).
+- Collaborative filtering is commonly used for recommender systems. These techniques aim to fill in the missing entries of a user-item association matrix. spark.mllib currently supports model-based collaborative filtering, in which users and products are described by a small set of latent factors that can be used to predict missing entries. spark.mllib uses the alternating least squares (ALS) algorithm to learn these latent factors.
